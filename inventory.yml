@@ -1,0 +1,8 @@
+[hyperfabric]
+hyperfabric ansible_host=hyperfabric.cisco.com
+
+[hyperfabric:vars]
+ansible_connection=ansible.netcommon.httpapi
+ansible_network_os=cisco.hyperfabric.hyperfabric
+ansible_httpapi_use_ssl=True
+ansible_httpapi_session_key={"token": "YOUR_TOKEN"}

@@ -1,0 +1,10 @@
+---
+- hosts: hyperfabric
+  gather_facts: False
+  tasks:
+  - name: Create a fabric
+    cisco.hyperfabric.hyperfabric_fabrics:
+      state: merged
+      config:
+        - name: "{{ fabric_name }}"
+          description: My super description
